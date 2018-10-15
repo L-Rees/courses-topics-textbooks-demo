@@ -9,15 +9,12 @@
 		<h1>All Topics</h1>
 	</header>
 	<div th:each="topic: ${topics}">
-		<h2>
+		<li>
 			<a th:href="@{/topic(id=${topic.id})}" th:text="${topic.name}"></a>
-		</h2>
-		
+		</li>
 	</div>
-
-
 	<footer>
-		<a href="http://localhth:text="${topic.name}" th:text="${topic.name}"st:8080/topics">Back to home</a>
+		<a href="http://localhost:8080/show-courses">Back to home</a>
 	</footer>
 </body>
 </html>
